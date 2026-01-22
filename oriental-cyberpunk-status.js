@@ -32,21 +32,21 @@ const orientalCyberpunkStatusSvg = `<svg width="1200" height="1600" viewBox="0 0
       letter-spacing: 1px;
     }
     .subtitle {
-      font-family: "궁서", "궁서체", "Gungsuh", "Noto Serif KR", "Arial", serif;
+      font-family: "궁서", "궁서체", "Gungsuh", "Noto Serif KR", "Times New Roman", serif;
       font-size: 19px;
       font-weight: 500;
       fill: #e5d8ff;
       letter-spacing: 1px;
     }
     .label {
-      font-family: "궁서", "궁서체", "Gungsuh", "Noto Serif KR", "Arial", serif;
+      font-family: "궁서", "궁서체", "Gungsuh", "Noto Serif KR", "Times New Roman", serif;
       font-size: 17px;
       font-weight: 500;
       fill: #9ffcff;
       letter-spacing: 0.6px;
     }
     .value {
-      font-family: "궁서", "궁서체", "Gungsuh", "Noto Serif KR", "Arial", serif;
+      font-family: "궁서", "궁서체", "Gungsuh", "Noto Serif KR", "Times New Roman", serif;
       font-size: 18px;
       font-weight: 500;
       fill: #ffffff;
