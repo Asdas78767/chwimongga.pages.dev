@@ -60,6 +60,11 @@
     .panel-highlight {
       fill: rgba(255, 255, 255, 0.04);
     }
+    .connector {
+      stroke: url(#neonGradient);
+      stroke-width: 1.2;
+      opacity: 0.65;
+    }
     .line {
       stroke: url(#neonGradient);
       stroke-width: 1;
@@ -84,10 +89,10 @@
   <rect x="1000" y="40" width="160" height="160" fill="url(#lattice)" opacity="0.4" />
   <rect x="40" y="520" width="160" height="160" fill="url(#lattice)" opacity="0.4" />
   <rect x="1000" y="520" width="160" height="160" fill="url(#lattice)" opacity="0.4" />
-  <path d="M80 150H180L200 130H300L320 150H420" stroke="url(#neonGradient)" stroke-width="1.2" opacity="0.65" />
-  <path d="M780 140H880L900 120H1020L1040 140H1120" stroke="url(#neonGradient)" stroke-width="1.2" opacity="0.65" />
-  <path d="M140 600H240L260 580H360" stroke="url(#neonGradient)" stroke-width="1.2" opacity="0.65" />
-  <path d="M840 600H940L960 580H1060" stroke="url(#neonGradient)" stroke-width="1.2" opacity="0.65" />
+  <path d="M80 150H180L200 130H300L320 150H420" class="connector" />
+  <path d="M780 140H880L900 120H1020L1040 140H1120" class="connector" />
+  <path d="M140 600H240L260 580H360" class="connector" />
+  <path d="M840 600H940L960 580H1060" class="connector" />
 
   <g>
     <rect x="80" y="60" width="1040" height="110" rx="20" class="panel" />
