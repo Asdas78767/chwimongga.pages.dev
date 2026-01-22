@@ -9,3 +9,4 @@
 
 ## 생성된 SVG
 - `oriental-cyberpunk-status.svg`: 취몽가 세계관 스타일의 캐릭터 상태창 UI SVG 템플릿.
+- `oriental-cyberpunk-status.js`: SVG 문자열을 export하는 JS 모듈 템플릿.
