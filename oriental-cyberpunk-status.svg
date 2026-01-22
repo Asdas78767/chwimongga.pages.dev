@@ -1,0 +1,144 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff00dd" />
+      <stop offset="50%" stop-color="#bd00ff" />
+      <stop offset="100%" stop-color="#00eaff" />
+    </linearGradient>
+    <radialGradient id="smokeGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 80) rotate(90) scale(110 520)">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="lattice" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M0 0H48V48H0Z" fill="none" stroke="#00eaff" stroke-width="0.6" opacity="0.25" />
+      <path d="M0 24H48M24 0V48M0 0L48 48M48 0L0 48" stroke="#ff00dd" stroke-width="0.6" opacity="0.2" />
+    </pattern>
+    <filter id="textGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#ff00dd" flood-opacity="0.7" />
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00eaff" flood-opacity="0.6" />
+    </filter>
+    <filter id="textGlowStrong" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#ff00dd" flood-opacity="0.85" />
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#00eaff" flood-opacity="0.8" />
+    </filter>
+  </defs>
+  <style>
+    <![CDATA[
+    .title {
+      font-family: "Noto Serif KR", "Times New Roman", serif;
+      font-size: 44px;
+      fill: #f8f5ff;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      font-family: "Noto Sans KR", "Arial", sans-serif;
+      font-size: 18px;
+      fill: #d5d7f0;
+      letter-spacing: 1px;
+    }
+    .label {
+      font-family: "Noto Sans KR", "Arial", sans-serif;
+      font-size: 16px;
+      fill: #7cf7ff;
+      letter-spacing: 0.6px;
+    }
+    .value {
+      font-family: "Noto Sans KR", "Arial", sans-serif;
+      font-size: 18px;
+      fill: #f2f7ff;
+      letter-spacing: 0.4px;
+    }
+    .glow {
+      filter: url(#textGlow);
+      animation: glowPulse 3.2s ease-in-out infinite;
+    }
+    .panel {
+      fill: rgba(4, 4, 8, 0.68);
+      stroke: url(#neonGradient);
+      stroke-width: 1.2;
+    }
+    .panel-highlight {
+      fill: rgba(255, 255, 255, 0.04);
+    }
+    .line {
+      stroke: url(#neonGradient);
+      stroke-width: 1;
+      opacity: 0.55;
+    }
+    @keyframes glowPulse {
+      0%,
+      100% {
+        filter: url(#textGlow);
+        opacity: 0.9;
+      }
+      50% {
+        filter: url(#textGlowStrong);
+        opacity: 1;
+      }
+    }
+    ]]>
+  </style>
+  <rect width="1200" height="720" fill="#050508" />
+  <rect x="24" y="24" width="1152" height="672" rx="26" fill="none" stroke="url(#neonGradient)" stroke-width="2" class="glow" />
+  <rect x="40" y="40" width="160" height="160" fill="url(#lattice)" opacity="0.4" />
+  <rect x="1000" y="40" width="160" height="160" fill="url(#lattice)" opacity="0.4" />
+  <rect x="40" y="520" width="160" height="160" fill="url(#lattice)" opacity="0.4" />
+  <rect x="1000" y="520" width="160" height="160" fill="url(#lattice)" opacity="0.4" />
+  <path d="M80 150H180L200 130H300L320 150H420" stroke="url(#neonGradient)" stroke-width="1.2" opacity="0.65" />
+  <path d="M780 140H880L900 120H1020L1040 140H1120" stroke="url(#neonGradient)" stroke-width="1.2" opacity="0.65" />
+  <path d="M140 600H240L260 580H360" stroke="url(#neonGradient)" stroke-width="1.2" opacity="0.65" />
+  <path d="M840 600H940L960 580H1060" stroke="url(#neonGradient)" stroke-width="1.2" opacity="0.65" />
+
+  <g>
+    <rect x="80" y="60" width="1040" height="110" rx="20" class="panel" />
+    <rect x="90" y="70" width="1020" height="90" rx="18" class="panel-highlight" />
+    <path d="M120 90C180 70 240 76 300 98C360 120 440 112 500 92C560 72 640 90 700 112C760 135 840 120 900 94C960 68 1040 88 1100 110L1100 140L120 140Z" fill="url(#smokeGradient)" opacity="0.25" />
+    <text x="120" y="128" class="title glow">{{char_name}}</text>
+    <text x="1080" y="120" text-anchor="end" class="subtitle glow">{{affiliation}}</text>
+  </g>
+
+  <g>
+    <rect x="80" y="190" width="700" height="310" rx="20" class="panel" />
+    <rect x="90" y="200" width="680" height="290" rx="18" class="panel-highlight" />
+    <line x1="100" y1="250" x2="760" y2="250" class="line" />
+    <line x1="100" y1="290" x2="760" y2="290" class="line" />
+    <line x1="100" y1="330" x2="760" y2="330" class="line" />
+    <line x1="100" y1="370" x2="760" y2="370" class="line" />
+    <line x1="100" y1="410" x2="760" y2="410" class="line" />
+    <line x1="100" y1="450" x2="760" y2="450" class="line" />
+    <text x="120" y="235" class="label">BLOODLINE <tspan class="value">{{bloodline}}</tspan></text>
+    <text x="120" y="275" class="label">SPECIES <tspan class="value">{{species}}</tspan></text>
+    <text x="120" y="315" class="label">GENDER <tspan class="value">{{gender}}</tspan></text>
+    <text x="120" y="355" class="label">BODY <tspan class="value">{{body_desc}}</tspan></text>
+    <text x="120" y="395" class="label">ABILITY <tspan class="value">{{ability_desc}}</tspan></text>
+    <text x="120" y="435" class="label">INTERACT <tspan class="value">{{interact_char}}</tspan></text>
+    <text x="120" y="475" class="label">MISSION <tspan class="value">{{mission}}</tspan></text>
+  </g>
+
+  <g>
+    <rect x="820" y="190" width="300" height="120" rx="20" class="panel" />
+    <rect x="830" y="200" width="280" height="100" rx="18" class="panel-highlight" />
+    <text x="845" y="230" class="label glow">PHONE ALERT</text>
+    <text x="845" y="265" class="value">{{phone_msg}}</text>
+  </g>
+
+  <g>
+    <rect x="820" y="330" width="300" height="170" rx="20" class="panel" />
+    <rect x="830" y="340" width="280" height="150" rx="18" class="panel-highlight" />
+    <line x1="840" y1="390" x2="1100" y2="390" class="line" />
+    <text x="845" y="370" class="label">CREDITS <tspan class="value">{{money}}</tspan></text>
+    <text x="845" y="430" class="label">ITEMS <tspan class="value">{{items}}</tspan></text>
+  </g>
+
+  <g>
+    <rect x="80" y="520" width="1040" height="70" rx="18" class="panel" />
+    <rect x="90" y="530" width="1020" height="50" rx="16" class="panel-highlight" />
+    <line x1="330" y1="535" x2="330" y2="585" class="line" />
+    <line x1="590" y1="535" x2="590" y2="585" class="line" />
+    <line x1="850" y1="535" x2="850" y2="585" class="line" />
+    <text x="110" y="565" class="label">DATE <tspan class="value">{{date}}</tspan></text>
+    <text x="360" y="565" class="label">TIME <tspan class="value">{{time}}</tspan></text>
+    <text x="620" y="565" class="label">WEATHER <tspan class="value">{{weather}}</tspan></text>
+    <text x="880" y="565" class="label">LOCATION <tspan class="value">{{location}}</tspan></text>
+  </g>
+</svg>
